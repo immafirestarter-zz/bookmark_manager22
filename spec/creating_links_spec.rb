@@ -3,10 +3,10 @@ feature 'it allows us to enter links' do
     visit '/link/new'
     fill_in :title, with: 'John'
     fill_in :url, with: 'John.com'
+    fill_in :tag, with: 'Johns'
     click_on 'Submit!'
      within 'ul#link' do
     expect(page).to have_content('John')
   end
-#
 end
 end
