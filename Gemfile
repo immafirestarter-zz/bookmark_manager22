@@ -9,3 +9,5 @@ end
 gem 'sinatra'
 gem 'shotgun'
 gem 'capybara'
+gem 'database_cleaner'
+gem 'rack'

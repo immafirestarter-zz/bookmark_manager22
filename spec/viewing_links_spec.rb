@@ -1,13 +1,12 @@
 require_relative '../models/link'
 describe Link do
   feature 'Viewing links' do
-    scenario 'I can see existing links on the links page' do
-      p "sajans"
+    scenario 'I can see existing links on the link page' do
       Link.create(url: 'http://www.makersacademy.com', title: 'Makers Academy')
-      visit '/links'
+      visit '/link'
       expect(page.status_code).to eq 200
-      within 'ul#links' do
-        expect(page).to have_content('Markers Academy')
+      within 'ul#link' do
+        expect(page).to have_content('Makers Academy')
       end
     end
   end
