@@ -5,9 +5,9 @@ gem 'dm-postgres-adapter'
 # gem "rails"
 group :development, :test do
 gem 'rspec'
+gem 'capybara'
 end
 gem 'sinatra'
 gem 'shotgun'
-gem 'capybara'
 gem 'database_cleaner'
 gem 'rack'
